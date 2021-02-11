@@ -440,8 +440,15 @@ if %cnfgdat% equ 4 goto Nexoexo
   if %ENEwhat% equ n goto dashboard
   goto Nexoexo
   :ENEsup
-  if %ENE% equ 0 set ENE=1
-  if %ENE% equ 1 set ENE=0
+  if %ENE% equ 0 goto ENE1
+  if %ENE% equ 1 goto ENE0
+  :ENE1
+  set ENE=1
+  goto ENEnxt
+  :ENE0
+  set ENE=0
+  goto ENEnxt
+  :ENEnxt
   echo.
   echo all time delays are now disabled/enabled
   cd C:\ProgramData
