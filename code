@@ -444,6 +444,7 @@ if %cnfgdat% equ 4 goto Nexoexo
   if %ENE% equ 1 set ENE=0
   echo.
   echo all time delays are now disabled/enabled
+  cd C:\ProgramData
   (
     echo %ENE%
   ) >NexoSaveDatEXE.sav
