@@ -447,7 +447,7 @@ if %cnfgdat% equ 4 goto Nexoexo
   cd C:\ProgramData
   (
     echo %ENE%
-  ) >NexoSaveDatEXE.sav
+  ) >NexoSaveDatENE.sav
   goto dashboard
 :disablestart
   if %DSUS% equ 1 set DSUS=0
