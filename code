@@ -288,7 +288,7 @@ timeout 3 >nul
   if %ENE% equ 0 timeout 1 >nul
   echo 5(hackertyper (requires download)
   if %ENE% equ 0 timeout 1 >nul
-  echo 6(delete save data (disabled due to development)
+  echo 6(delete save data (testing)
   if %ENE% equ 0 timeout 1 >nul
   echo 7(info
   if %ENE% equ 0 timeout 1 >nul
@@ -481,6 +481,14 @@ if EXIST NW.vbs (goto NexoWdel) ELSE goto NexoWdown
 :NexoWdel
 del NW.vbs
 cd C:\ProgramData
+goto dashboard
+:savdel
+del HT.bat
+del NexoSaveDateENE.sav
+del NexoSaveDateHT.sav
+del NexoSaveDateNAME.sav
+del NexoSaveDateSU.sav
+cls
 goto dashboard
 :NexoWdown
   echo.
